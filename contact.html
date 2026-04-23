@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | SmartSteps Tutoring</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Calendly stylesheet for embedded booking widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div>Contact SmartSteps for a friendly first conversation.</div>
+      <div>Email: smartstepstutor1@gmail.com | Phone: 07467 834336</div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="SmartSteps Tutoring logo" />
+        <div class="brand-text">
+          <strong>SmartSteps Tutoring</strong>
+          <span>Supportive tuition for school students</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="button">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact and Booking</span>
+        <h1>Let’s talk about the support your child needs.</h1>
+        <p>
+          This page gives families two easy ways to get started: a simple contact form and an online booking calendar.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="contact-box">
+          <h2>Send a message</h2>
+          <!--
+            This is a visual contact form sample.
+            To make it fully work, connect it to a form service such as Formspree, Netlify Forms, or Basin.
+          -->
+          <form action="#" method="post">
+            <div class="form-grid">
+              <div>
+                <label for="name">Parent or Student Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" />
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" />
+              </div>
+              <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+              </div>
+              <div>
+                <label for="subject">Subject Needed</label>
+                <select id="subject" name="subject">
+                  <option>Mathematics</option>
+                  <option>English</option>
+                  <option>Science</option>
+                  <option>Homework Support</option>
+                  <option>Exam Preparation</option>
+                </select>
+              </div>
+              <div class="full">
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" placeholder="Tell us the year group, subject, and what kind of support is needed."></textarea>
+              </div>
+            </div>
+            <p class="note">This sample form is styled and ready. You only need to connect it to a form handler before publishing.</p>
+            <input type="submit" value="Send Enquiry" />
+          </form>
+        </div>
+
+        <div class="contact-box">
+          <h2>Business details</h2>
+          <p><strong>Email:</strong> <a href="mailto:smartstepstutor1@gmail.com">smartstepstutor1@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:07467834336">07467 834336</a></p>
+          <p><strong>Availability:</strong> Weekday evenings and weekend sessions by appointment</p>
+          <p><strong>Formats:</strong> Online and in-person tutoring</p>
+          <h3>Book via Calendly</h3>
+          <p>
+            The booking calendar below uses a sample Calendly link. Replace the URL with your real Calendly booking page.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Online booking calendar</h2>
+          <p>Replace the sample link below with your own Calendly URL after you create your account.</p>
+        </div>
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/your-calendly-username/30min"
+          aria-label="Calendly booking calendar"
+        ></div>
+        <p class="note">
+          Replace <strong>https://calendly.com/your-calendly-username/30min</strong> with your real Calendly event link.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h3>SmartSteps Tutoring</h3><p>Friendly support for families looking for clear and practical tutoring.</p></div>
+        <div><h3>Pages</h3><p><a href="index.html">Home</a><br><a href="about.html">About</a><br><a href="services.html">Services</a></p></div>
+        <div><h3>Contact</h3><p>smartstepstutor1@gmail.com<br>07467 834336</p></div>
+      </div>
+      <div class="footer-bottom">© 2026 SmartSteps Tutoring. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Calendly widget script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
