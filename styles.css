@@ -1,0 +1,332 @@
+/* ---------------------------------------------------------
+   SmartSteps Tutoring sample website styles
+   This CSS is kept simple on purpose so it is easy to read
+   and edit for beginners.
+---------------------------------------------------------- */
+
+:root {
+  --blue: #1149b5;
+  --blue-dark: #0a2e73;
+  --yellow: #f5c400;
+  --text: #1f2937;
+  --muted: #5f6b7a;
+  --bg: #ffffff;
+  --soft: #f5f8ff;
+  --border: #dbe5f3;
+  --shadow: 0 10px 30px rgba(17, 73, 181, 0.08);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--blue);
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.narrow {
+  width: min(860px, 92%);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+}
+
+.brand {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.brand-highlight {
+  color: var(--yellow);
+}
+
+.brand-main {
+  color: var(--blue);
+}
+
+.brand-sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  color: var(--blue);
+}
+
+.hero {
+  background: linear-gradient(135deg, #f7faff 0%, #eef4ff 50%, #fff9db 100%);
+  padding: 72px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.eyebrow {
+  color: var(--blue);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.hero h1,
+.section-heading h2 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 16px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 28px 0;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 13px 22px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-primary {
+  background: var(--blue);
+  color: white;
+}
+
+.button-primary:hover {
+  background: var(--blue-dark);
+}
+
+.button-secondary {
+  background: white;
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.button-full {
+  width: 100%;
+}
+
+.hero-points,
+.check-list {
+  padding-left: 20px;
+}
+
+.hero-card,
+.card,
+.contact-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 24px;
+}
+
+.feature-item + .feature-item {
+  margin-top: 18px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-soft {
+  background: var(--soft);
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-intro {
+  color: var(--muted);
+  max-width: 65ch;
+}
+
+.about-grid,
+.services-grid,
+.testimonial-grid,
+.contact-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.about-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 32px;
+}
+
+.services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.card {
+  padding: 24px;
+}
+
+.pricing-note {
+  margin-top: 28px;
+  background: #fff8d7;
+  border: 1px solid #f2e28c;
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial footer {
+  margin-top: 14px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.contact-card {
+  padding: 22px;
+  margin-top: 24px;
+}
+
+.form-note {
+  color: var(--muted);
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.contact-form label {
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #c9d6ea;
+  border-radius: 12px;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid rgba(17, 73, 181, 0.2);
+  border-color: var(--blue);
+}
+
+.site-footer {
+  background: var(--blue-dark);
+  color: white;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .about-grid,
+  .services-grid,
+  .testimonial-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
